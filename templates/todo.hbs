@@ -25,12 +25,13 @@
 			Users are able to create their own accounts, create a custom list, add items and remove items from those lists.
 		<br>
 		<br>
-		The Todo application is built with simple HTML, CSS for the front-end portion, and Node Js, Express, and MongoDB for the backend. 
-		I used Heroku to deploy the application and Mongo Atlas to deploy the database. I used various libraries for the backend portion of this application such as bycrpt to hash user passwords,  
-		and JSON web token to authenticate a user and store those tokens in a cookie. Middleware was utilized to help authenticate certain routes ensuring that only users that have already login can access those routes. 
-		The data is represented by three schemas; users, list, and items. The user schema consists of a username, password, email, and an array of object tokens to store all of the JSON web tokens generated. 
-		Inside this schema, I've created several helper methods such as one generating JSON web token, one to find a user based on their credentials, 
-		and a method that hash the password entered before saving. You can find the GitHub repo here: <a class="project-github" target="_blank" href="https://github.com/AlexAntoine/To-Do-List">Todo App.</a> 
+		Todo is a Node js application built with HTML, CSS, Node Js, Express, and MongoDB as the backend. I deployed the application using Heroku and the database 
+		using Mongo Atlas. For the backend of this application, I used bycrpt to hash user passwords and jsonwebtoken to authenticate a user and store those tokens in 
+		a cookie. Middleware was used to aid in the authentication of certain routes ensuring that only users that have already login can access those routes. 
+		Three schemas are used to represent the data: users, lists, and items. The user schema consists of a username, password, email, and an array of object tokens 
+		to store all of the generated JSON web tokens. Within this schema, I've added several helper methods, such as one for generating JSON web tokens, another for 
+		locating a user based on their credentials, and another that requires the password to be entered before saving. You can find the GitHub repo here: 
+		<a class="project-github" target="_blank" href="https://github.com/AlexAntoine/To-Do-List">Todo App.</a> 
         </p>
 
 		<h5>Technologies:</h5>

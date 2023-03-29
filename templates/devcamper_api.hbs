@@ -25,12 +25,18 @@
             Other functionalities include pagination, filter, selecting, and sorting.
 		<br>
 		<br>
-		The Todo application is built with simple HTML, CSS for the front-end portion, and Node Js, Express, and MongoDB for the backend. 
-		I used Heroku to deploy the application and Mongo Atlas to deploy the database. I used various libraries for the backend portion of this application such as bycrpt to hash user passwords,  
-		and JSON web token to authenticate a user and store those tokens in a cookie. Middleware was utilized to help authenticate certain routes ensuring that only users that have already login can access those routes. 
-		The data is represented by three schemas; users, list, and items. The user schema consists of a username, password, email, and an array of object tokens to store all of the JSON web tokens generated. 
-		Inside this schema, I've created several helper methods such as one generating JSON web token, one to find a user based on their credentials, 
-		and a method that hash the password entered before saving. You can find the GitHub repo here: <a class="project-github" target="_blank" href="https://github.com/AlexAntoine/Devcamper-api/tree/main">Devcamper API.</a> 
+		DevCamper-Api is a CRUD REST API that was built with Node, Express, and MongoDB and is deployed through Heroku. In this app, you can create, read, 
+		update, and delete a boot camp, a course, and other users. Different libraries were built into this app so that some of its features could work. 
+		On some routes, packages like bcryptjs and jsonwebtoken were used to authenticate users that wanted access. Node geocoder was used to provide the 
+		longitude and latitude of each location of the boot camps. Finally, security packages such as express-mongo-sanitize, xss-clean, cors, hpp, a
+		nd helmet were used. Node geocoder was used to figure out the longitude and latitude of each boot camp location. The last thing that was done was to 
+		use security packages like express-mongo-sanitize, xss-clean, cors, hpp, and helmet. I chose the MVC architecture for this project, minus view, as it 
+		helps reinforce the separation of concerns principle. Putting the models, methods, middleware, and routes in their own space makes it easy to maintain 
+		and allows the system to grow. 
+
+		To use this app, copy the URL <strong>https://antoine-devcamper-api.herokuapp.com/api/v1/bootcamps</strong> and paste it into your browser. To use the "create, 
+		update, delete" feature, you will need Postman or something similar.
+		You can find the GitHub repo here: <a class="project-github" target="_blank" href="https://github.com/AlexAntoine/Devcamper-api/tree/main">Devcamper API.</a> 
         </p>
 
 		<h5>Technologies:</h5>
